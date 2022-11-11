@@ -30,7 +30,7 @@ int GretestCommonDivisor(int n1,int n2)
     if(n2 != 0)
     return (GretestCommonDivisor(n2,n1 % n2));
     else 
-    return n1;+-/
+    return n1;
 }
 int main()
 {

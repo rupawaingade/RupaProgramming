@@ -1,13 +1,34 @@
 #include<iostream>
-int main()
-{
-    int  number[5] = {1,2,3,4,5};
-    std::cout <<"numbers array is:";
-    for(int i= 0;i< 5;i++)
+
+class Rectangle
+`{
+ public:
+
+    int length;
+    int breadth;
+
+    int area()
     {
-        std::cout << number[i];
+        return length * breadth;
+    }
+    int perimeter()
+    {
+        return 2*(length + breadth);
     }
 
+};
 
 
-} 
+int main()
+{
+
+    Rectangle r1;
+    r1.length = 10;
+    r1.breadth = 5;
+    std::cout <<"Area is:"<<r1.area()<<std::endl;
+    std::cout <<"Perimeter is:"<<r1.perimeter()<<std::endl;
+
+  return 0;
+
+
+}

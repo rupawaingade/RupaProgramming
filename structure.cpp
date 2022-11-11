@@ -20,5 +20,6 @@ int main()
 
     std::cout<<p->rollNumber<<std::endl;
     std::cout<<p->name<<std::endl;
+   // delete [] p;
     return 0;
 }
